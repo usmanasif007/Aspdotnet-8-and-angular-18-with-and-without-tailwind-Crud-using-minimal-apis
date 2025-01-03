@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Assesment_ProductManagementSystem_Usman.props" />
-</Project>
