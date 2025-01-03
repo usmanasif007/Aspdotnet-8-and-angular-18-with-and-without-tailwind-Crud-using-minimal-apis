@@ -44,6 +44,7 @@ if (app.Environment.IsDevelopment())
 
 app.MapPost("/api/product/getAll", ([FromBody] ProductFilterDTO input, IProductService productService) => Results.Ok(productService.GetAll(input)));
 app.MapPost("/api/product/save", ([FromBody] ProductDTO input, IProductService productService) => Results.Ok(productService.Save(input)));
+app.MapPost("/api/product/delete", ([FromBody] ProductDTO input, IProductService productService) => Results.Ok(productService.Save(input)));
 
 app.UseHttpsRedirection();
 
