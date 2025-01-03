@@ -1,0 +1,32 @@
+<div class="max-w-4xl mx-auto p-4">
+    <form id="productEntryForm" onsubmit="return handleSubmit(event)">
+        <!-- Name Field -->
+        <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+            <input type="text" id="name" name="name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter name">
+            <p id="nameError" class="text-red-500 text-xs mt-1 hidden">Name is required and must be at least 3 characters.</p>
+        </div>
+  
+        <!-- Price Field -->
+        <div class="mb-4">
+            <label for="price" class="block text-sm font-medium text-gray-700">Price</label>
+            <input type="text" id="price" name="price" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter price">
+            <p id="priceError" class="text-red-500 text-xs mt-1 hidden">Price is required and must be a valid number.</p>
+        </div>
+  
+        <!-- Description Field -->
+        <div class="mb-4">
+            <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+            <textarea id="description" name="description" rows="4" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter description"></textarea>
+            <p id="descriptionError" class="text-red-500 text-xs mt-1 hidden">Description is required and must be at least 10 characters.</p>
+        </div>
+  
+        <!-- Submit Button -->
+        <div>
+            <button type="submit" class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                Submit
+            </button>
+        </div>
+    </form>
+  </div>
+  
