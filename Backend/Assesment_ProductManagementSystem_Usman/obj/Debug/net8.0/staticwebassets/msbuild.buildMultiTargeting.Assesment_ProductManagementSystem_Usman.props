@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Assesment_ProductManagementSystem_Usman.props" />
+</Project>
